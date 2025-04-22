@@ -39,7 +39,7 @@ vps-control-lite/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/vps-control-lite.git
+    git clone https://github.com/1TIME1/vps-control-lite.git
     cd vps-control-lite
     ```
 
