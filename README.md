@@ -4,8 +4,6 @@
 
 A lightweight, web-based tool for managing basic information and executing simple, predefined commands on your Virtual Private Servers (VPS).
 
-**Motivation:** This project was created as a slightly complex open-source example, particularly for demonstrating web development skills involving backend APIs, frontend interaction, and remote server communication via SSH. It serves as a potential qualifying project for programs requiring open-source contributions (like the Vtexs free server application).
-
 ## Features
 
 *   **Add/Remove VPS:** Store and manage connection details for multiple VPS instances.
