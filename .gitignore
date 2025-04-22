@@ -1,6 +1,16 @@
-*.i
-*.ii
-*.gpu
-*.ptx
-*.cubin
-*.fatbin
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+*.env
+*.log
+
+# Data files (optional, depends if you want to commit example data)
+# backend/vps_data.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
