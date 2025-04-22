@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPS Control Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>VPS Control Lite</h1>
+
+    <div class="container">
+        <h2>Add New VPS</h2>
+        <form id="add-vps-form">
+            <input type="text" id="vps-name" placeholder="VPS Name (e.g., Web Server)" required>
+            <input type="text" id="vps-ip" placeholder="IP Address" required>
+            <input type="text" id="vps-user" placeholder="Username (e.g., root, ubuntu)" required>
+            <input type="password" id="vps-password" placeholder="Password (Leave blank if using key)">
+            <input type="text" id="vps-key-path" placeholder="SSH Key Path (e.g., /home/user/.ssh/id_rsa)">
+             <small>Note: Provide EITHER Password OR Key Path. Key Path refers to the path on the server running *this* tool.</small>
+            <input type="text" id="vps-os" placeholder="Operating System (Optional)">
+            <button type="submit">Add VPS</button>
+        </form>
+        <p id="add-status" class="status-message"></p>
+    </div>
+
+    <div class="container">
+        <h2>Managed VPS List</h2>
+        <table id="vps-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>IP Address</th>
+                    <th>Username</th>
+                    <th>OS</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="vps-list">
+                <!-- VPS entries will be loaded here -->
+            </tbody>
+        </table>
+         <p id="list-status" class="status-message"></p>
+    </div>
+
+    <div class="container">
+        <h2>Command Output</h2>
+        <pre id="command-output"><code id="output-content">Command results will appear here...</code></pre>
+         <p id="command-status" class="status-message error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
